@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fffaf7;
+  color: #5c4b51;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8e8e8, #f6efe7, #efe3dc);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 8%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #b98989;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #6f5d62;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #c79c8c;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.hero-content h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #7b5f68;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-content button {
+  width: 220px;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background: #d8b4a0;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-content button:hover {
+  background: #c99b84;
+  transform: translateY(-2px);
+}
+
+.catalogo {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.catalogo h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #8b6f76;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 20px;
+  color: #7a6068;
+}
+
+.card p {
+  margin: 15px 0 25px;
+  font-weight: 600;
+  color: #c08d7d;
+}
+
+.sobre {
+  padding: 80px 8%;
+  background: #fdf3ef;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.contato {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.contato h2 {
+  margin-bottom: 30px;
+  font-size: 2.3rem;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border: 1px solid #e4cfc6;
+  border-radius: 12px;
+  outline: none;
+  background: #fff;
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+form button {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #d8b4a0;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #c99b84;
+}
+
+footer {
+  background: #f3dfd6;
+  text-align: center;
+  padding: 20px;
+  color: #7b5f68;
+}
+
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2.8rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
