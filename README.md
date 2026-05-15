@@ -85,8 +85,6 @@ Acesse o site através da url: josepedro-07.github.io
 
 🚧 Em desenvolvimento
 
-*(ajuste conforme o andamento do projeto)*
-
 ---
 
 ## 📄 Licença
