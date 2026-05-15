@@ -499,3 +499,21 @@ footer{
   background:#a38f74;
   box-shadow:0 10px 25px rgba(184,165,139,0.25);
 }
+
+@media(max-width:768px){
+
+  .whatsapp-box{
+    padding:35px;
+    width:100%;
+  }
+
+  .whatsapp-box h3{
+    font-size:2.3rem;
+  }
+
+  .whatsapp-btn{
+    width:100%;
+    text-align:center;
+  }
+
+}
